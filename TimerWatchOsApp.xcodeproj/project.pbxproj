@@ -11,10 +11,8 @@
 		6D49DE31270DA26000415181 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D49DE2F270DA26000415181 /* Interface.storyboard */; };
 		6D49DE33270DA26200415181 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D49DE32270DA26200415181 /* Assets.xcassets */; };
 		6D49DE39270DA26200415181 /* TimerWatchOsApp WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6D49DE38270DA26200415181 /* TimerWatchOsApp WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		6D49DE3E270DA26200415181 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D49DE3D270DA26200415181 /* InterfaceController.swift */; };
+		6D49DE3E270DA26200415181 /* MainIC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D49DE3D270DA26200415181 /* MainIC.swift */; };
 		6D49DE40270DA26200415181 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D49DE3F270DA26200415181 /* ExtensionDelegate.swift */; };
-		6D49DE42270DA26200415181 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D49DE41270DA26200415181 /* NotificationController.swift */; };
-		6D49DE44270DA26200415181 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D49DE43270DA26200415181 /* ComplicationController.swift */; };
 		6D49DE46270DA26400415181 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D49DE45270DA26400415181 /* Assets.xcassets */; };
 		6D49DE52270DA26400415181 /* TimerWatchOsAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D49DE51270DA26400415181 /* TimerWatchOsAppTests.swift */; };
 		6D49DE5C270DA26400415181 /* TimerWatchOsAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D49DE5B270DA26400415181 /* TimerWatchOsAppUITests.swift */; };
@@ -83,13 +81,10 @@
 		6D49DE30270DA26000415181 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		6D49DE32270DA26200415181 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6D49DE38270DA26200415181 /* TimerWatchOsApp WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "TimerWatchOsApp WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		6D49DE3D270DA26200415181 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		6D49DE3D270DA26200415181 /* MainIC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainIC.swift; sourceTree = "<group>"; };
 		6D49DE3F270DA26200415181 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
-		6D49DE41270DA26200415181 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
-		6D49DE43270DA26200415181 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
 		6D49DE45270DA26400415181 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6D49DE47270DA26400415181 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6D49DE48270DA26400415181 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		6D49DE4D270DA26400415181 /* TimerWatchOsAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimerWatchOsAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D49DE51270DA26400415181 /* TimerWatchOsAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerWatchOsAppTests.swift; sourceTree = "<group>"; };
 		6D49DE57270DA26400415181 /* TimerWatchOsAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimerWatchOsAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -148,8 +143,8 @@
 		6D49DE2E270DA26000415181 /* TimerWatchOsApp WatchKit App */ = {
 			isa = PBXGroup;
 			children = (
-				6D49DE2F270DA26000415181 /* Interface.storyboard */,
-				6D49DE32270DA26200415181 /* Assets.xcassets */,
+				6D49DE78270DACD500415181 /* Interfaces */,
+				6D49DE79270DACDD00415181 /* Resources */,
 			);
 			path = "TimerWatchOsApp WatchKit App";
 			sourceTree = "<group>";
@@ -157,13 +152,10 @@
 		6D49DE3C270DA26200415181 /* TimerWatchOsApp WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				6D49DE3D270DA26200415181 /* InterfaceController.swift */,
-				6D49DE3F270DA26200415181 /* ExtensionDelegate.swift */,
-				6D49DE41270DA26200415181 /* NotificationController.swift */,
-				6D49DE43270DA26200415181 /* ComplicationController.swift */,
-				6D49DE45270DA26400415181 /* Assets.xcassets */,
-				6D49DE47270DA26400415181 /* Info.plist */,
-				6D49DE48270DA26400415181 /* PushNotificationPayload.apns */,
+				6D49DE76270DACA000415181 /* Configurations */,
+				6D49DE73270DAC7700415181 /* Core */,
+				6D49DE75270DAC8A00415181 /* Resources */,
+				6D49DE77270DACC400415181 /* Modules */,
 			);
 			path = "TimerWatchOsApp WatchKit Extension";
 			sourceTree = "<group>";
@@ -183,6 +175,62 @@
 				6D49DE5D270DA26400415181 /* TimerWatchOsAppUITestsLaunchTests.swift */,
 			);
 			path = TimerWatchOsAppUITests;
+			sourceTree = "<group>";
+		};
+		6D49DE72270DAC3B00415181 /* MainIC */ = {
+			isa = PBXGroup;
+			children = (
+				6D49DE3D270DA26200415181 /* MainIC.swift */,
+			);
+			path = MainIC;
+			sourceTree = "<group>";
+		};
+		6D49DE73270DAC7700415181 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				6D49DE3F270DA26200415181 /* ExtensionDelegate.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		6D49DE75270DAC8A00415181 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6D49DE45270DA26400415181 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		6D49DE76270DACA000415181 /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				6D49DE47270DA26400415181 /* Info.plist */,
+			);
+			path = Configurations;
+			sourceTree = "<group>";
+		};
+		6D49DE77270DACC400415181 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				6D49DE72270DAC3B00415181 /* MainIC */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		6D49DE78270DACD500415181 /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				6D49DE2F270DA26000415181 /* Interface.storyboard */,
+			);
+			path = Interfaces;
+			sourceTree = "<group>";
+		};
+		6D49DE79270DACDD00415181 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6D49DE32270DA26200415181 /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -372,10 +420,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D49DE42270DA26200415181 /* NotificationController.swift in Sources */,
-				6D49DE44270DA26200415181 /* ComplicationController.swift in Sources */,
 				6D49DE40270DA26200415181 /* ExtensionDelegate.swift in Sources */,
-				6D49DE3E270DA26200415181 /* InterfaceController.swift in Sources */,
+				6D49DE3E270DA26200415181 /* MainIC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -554,9 +600,9 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "TimerWatchOsApp WatchKit Extension/Info.plist";
+				INFOPLIST_FILE = "TimerWatchOsApp WatchKit Extension/Configurations/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "TimerWatchOsApp WatchKit Extension";
-				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_WKExtensionDelegateClassName = "$(PRODUCT_MODULE_NAME).ExtensionDelegate";
 				INFOPLIST_KEY_WKWatchOnly = YES;
@@ -584,9 +630,9 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "TimerWatchOsApp WatchKit Extension/Info.plist";
+				INFOPLIST_FILE = "TimerWatchOsApp WatchKit Extension/Configurations/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "TimerWatchOsApp WatchKit Extension";
-				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_WKExtensionDelegateClassName = "$(PRODUCT_MODULE_NAME).ExtensionDelegate";
 				INFOPLIST_KEY_WKWatchOnly = YES;
