@@ -14,25 +14,30 @@
                         <group width="1" alignment="left" id="Y0S-2U-wwJ">
                             <items>
                                 <label alignment="center" text="Total:- " id="N55-y9-TMe">
-                                    <color key="textColor" red="0.74509803919999995" green="0.93725490199999995" blue="0.76078431369999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="textColor" red="0.38823530080000002" green="0.66274511810000003" blue="0.73333334920000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </label>
                                 <timer alignment="right" id="vry-rG-asA">
-                                    <color key="textColor" red="1" green="0.2527923882" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="textColor" red="0.38823530080000002" green="0.66274511810000003" blue="0.73333334920000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </timer>
                             </items>
                         </group>
                         <timer width="136" height="26" alignment="center" textAlignment="center" id="9Ra-nQ-AE6"/>
                         <button width="1" alignment="left" title="START" id="K43-ky-N5k">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="backgroundColor" red="0.38823530080000002" green="0.66274511810000003" blue="0.73333334920000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             <connections>
                                 <action selector="startBtnPressed" destination="AgC-eL-Hgc" id="GAc-al-0nL"/>
                             </connections>
                         </button>
                         <button width="1" alignment="left" title="RESET" id="E2l-Ru-MkC">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="backgroundColor" red="0.38823530080000002" green="0.66274511810000003" blue="0.73333334920000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             <connections>
                                 <action selector="resetBtnPressed" destination="AgC-eL-Hgc" id="sWG-E3-wFa"/>
                             </connections>
                         </button>
                     </items>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <connections>
                         <outlet property="startBtn" destination="K43-ky-N5k" id="oxW-lc-4OK"/>
                         <outlet property="timer" destination="9Ra-nQ-AE6" id="xDG-Pz-tf0"/>
