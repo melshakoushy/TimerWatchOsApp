@@ -6,6 +6,23 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="19044"/>
     </dependencies>
     <scenes>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="tdH-2X-cc4">
+            <objects>
+                <notificationController id="4RB-nL-bcm">
+                    <items>
+                        <label alignment="left" text="Alert Label" id="08p-qt-PYV"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" id="Pkd-zo-h3h"/>
+                    <color key="backgroundColor" red="0.38823530080000002" green="0.66274511810000003" blue="0.73333334920000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="08p-qt-PYV" id="pZu-qb-ohI"/>
+                        <segue destination="mvd-Zq-U0E" kind="relationship" relationship="dynamicNotificationInterface" id="myi-9t-i8T"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="-291" y="16"/>
+        </scene>
         <!--MainIC-->
         <scene sceneID="aou-V4-d1y">
             <objects>
@@ -45,7 +62,26 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="220" y="345"/>
+            <point key="canvasLocation" x="-101" y="331"/>
+        </scene>
+        <!--NotificationIC-->
+        <scene sceneID="UQi-yj-Ra7">
+            <objects>
+                <controller id="mvd-Zq-U0E" customClass="NotificationIC" customModule="TimerWatchOsApp_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label alignment="left" text="Label" id="d6u-AP-BdI">
+                            <fontDescription key="font" style="UICTFontTextStyleBody"/>
+                        </label>
+                        <label alignment="left" text="Label" numberOfLines="0" id="7qu-Zl-Fa7"/>
+                    </items>
+                    <color key="backgroundColor" red="0.38823530080000002" green="0.66274511810000003" blue="0.73333334920000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <connections>
+                        <outlet property="bodyLbl" destination="7qu-Zl-Fa7" id="sYQ-mE-pGy"/>
+                        <outlet property="titleLbl" destination="d6u-AP-BdI" id="faF-hD-0df"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="81" y="15"/>
         </scene>
     </scenes>
 </document>

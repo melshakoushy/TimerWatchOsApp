@@ -17,6 +17,12 @@
 		6D49DE52270DA26400415181 /* TimerWatchOsAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D49DE51270DA26400415181 /* TimerWatchOsAppTests.swift */; };
 		6D49DE5C270DA26400415181 /* TimerWatchOsAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D49DE5B270DA26400415181 /* TimerWatchOsAppUITests.swift */; };
 		6D49DE5E270DA26400415181 /* TimerWatchOsAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D49DE5D270DA26400415181 /* TimerWatchOsAppUITestsLaunchTests.swift */; };
+		6D8A38F527259BF400D51CB4 /* PushNotificationPayload.apns in Resources */ = {isa = PBXBuildFile; fileRef = 6D8A38F227259BF400D51CB4 /* PushNotificationPayload.apns */; };
+		6D8A38F827259D7B00D51CB4 /* PushNotificationPayload.apns in Resources */ = {isa = PBXBuildFile; fileRef = 6D8A38F227259BF400D51CB4 /* PushNotificationPayload.apns */; };
+		6D8A38F927259D7B00D51CB4 /* PushNotificationPayload.apns in Resources */ = {isa = PBXBuildFile; fileRef = 6D8A38F227259BF400D51CB4 /* PushNotificationPayload.apns */; };
+		6D8A38FA27259D7C00D51CB4 /* PushNotificationPayload.apns in Resources */ = {isa = PBXBuildFile; fileRef = 6D8A38F227259BF400D51CB4 /* PushNotificationPayload.apns */; };
+		6D8A38FB27259D7D00D51CB4 /* PushNotificationPayload.apns in Resources */ = {isa = PBXBuildFile; fileRef = 6D8A38F227259BF400D51CB4 /* PushNotificationPayload.apns */; };
+		6D8A38FE2725A02E00D51CB4 /* NotificationIC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D8A38FD2725A02E00D51CB4 /* NotificationIC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +96,8 @@
 		6D49DE57270DA26400415181 /* TimerWatchOsAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimerWatchOsAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D49DE5B270DA26400415181 /* TimerWatchOsAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerWatchOsAppUITests.swift; sourceTree = "<group>"; };
 		6D49DE5D270DA26400415181 /* TimerWatchOsAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerWatchOsAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		6D8A38F227259BF400D51CB4 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		6D8A38FD2725A02E00D51CB4 /* NotificationIC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationIC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -205,6 +213,7 @@
 			isa = PBXGroup;
 			children = (
 				6D49DE47270DA26400415181 /* Info.plist */,
+				6D8A38F227259BF400D51CB4 /* PushNotificationPayload.apns */,
 			);
 			path = Configurations;
 			sourceTree = "<group>";
@@ -212,6 +221,7 @@
 		6D49DE77270DACC400415181 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				6D8A38FC27259FF800D51CB4 /* NotificationIC */,
 				6D49DE72270DAC3B00415181 /* MainIC */,
 			);
 			path = Modules;
@@ -231,6 +241,14 @@
 				6D49DE32270DA26200415181 /* Assets.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		6D8A38FC27259FF800D51CB4 /* NotificationIC */ = {
+			isa = PBXGroup;
+			children = (
+				6D8A38FD2725A02E00D51CB4 /* NotificationIC.swift */,
+			);
+			path = NotificationIC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -379,6 +397,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D8A38F827259D7B00D51CB4 /* PushNotificationPayload.apns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -388,6 +407,7 @@
 			files = (
 				6D49DE33270DA26200415181 /* Assets.xcassets in Resources */,
 				6D49DE31270DA26000415181 /* Interface.storyboard in Resources */,
+				6D8A38F927259D7B00D51CB4 /* PushNotificationPayload.apns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,6 +416,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6D49DE46270DA26400415181 /* Assets.xcassets in Resources */,
+				6D8A38F527259BF400D51CB4 /* PushNotificationPayload.apns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,6 +424,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D8A38FB27259D7D00D51CB4 /* PushNotificationPayload.apns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,6 +432,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D8A38FA27259D7C00D51CB4 /* PushNotificationPayload.apns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,6 +445,7 @@
 			files = (
 				6D49DE40270DA26200415181 /* ExtensionDelegate.swift in Sources */,
 				6D49DE3E270DA26200415181 /* MainIC.swift in Sources */,
+				6D8A38FE2725A02E00D51CB4 /* NotificationIC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -599,6 +623,7 @@
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UAZ938L9FJ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "TimerWatchOsApp WatchKit Extension/Configurations/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "TimerWatchOsApp WatchKit Extension";
@@ -629,6 +654,7 @@
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UAZ938L9FJ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "TimerWatchOsApp WatchKit Extension/Configurations/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "TimerWatchOsApp WatchKit Extension";
@@ -661,6 +687,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UAZ938L9FJ;
 				GENERATE_INFOPLIST_FILE = YES;
 				IBSC_MODULE = TimerWatchOsApp_WatchKit_Extension;
 				INFOPLIST_KEY_CFBundleDisplayName = "TimerWatchOsApp WatchKit App";
@@ -685,6 +712,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UAZ938L9FJ;
 				GENERATE_INFOPLIST_FILE = YES;
 				IBSC_MODULE = TimerWatchOsApp_WatchKit_Extension;
 				INFOPLIST_KEY_CFBundleDisplayName = "TimerWatchOsApp WatchKit App";
@@ -706,7 +734,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 45S7VN2TT3;
+				DEVELOPMENT_TEAM = UAZ938L9FJ;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.elshakoushy.TimerWatchOsApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -719,7 +747,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 45S7VN2TT3;
+				DEVELOPMENT_TEAM = UAZ938L9FJ;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.elshakoushy.TimerWatchOsApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -734,6 +762,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UAZ938L9FJ;
 				GENERATE_INFOPLIST_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -759,6 +788,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UAZ938L9FJ;
 				GENERATE_INFOPLIST_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -782,6 +812,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UAZ938L9FJ;
 				GENERATE_INFOPLIST_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -805,6 +836,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UAZ938L9FJ;
 				GENERATE_INFOPLIST_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
